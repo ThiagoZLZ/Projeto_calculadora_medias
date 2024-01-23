@@ -66,6 +66,6 @@ function calculoMediaFinal(){
 function mediaFinal(){
     const media = calculoMediaFinal();
 
-    document.getElementById("media-final-valor").innerHTML = media;
+    document.getElementById("media-final-valor").innerHTML = media.toFixed(2); // toFixed(2) - Para limitar o tamanho de duas casas decimais //
     document.getElementById("media-final-resultado").innerHTML = media >= notaMinima ? spanAprovado : spanReprovado;
 }
